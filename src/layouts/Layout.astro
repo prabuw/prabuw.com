@@ -1,0 +1,28 @@
+---
+import '@fontsource/source-serif-pro';
+
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="font-serif h-screen">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="m-auto my-6 max-w-prose">
+    <header class="mb-4">
+      <h3 class="font-serif text-4xl">Prabu Weerasinghe</h3>
+    </header>
+		<slot />
+	</body>
+</html>
+<style is:global>
+</style>
