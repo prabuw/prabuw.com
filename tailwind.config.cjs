@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['"Source Serif Pro"', defaultTheme.fontFamily.serif],
+        serif: ['"et-book", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif', defaultTheme.fontFamily.serif],
       },
     },
   },
